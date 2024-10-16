@@ -1,0 +1,131 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Flexbox container that centers form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding: 60px;
+  background-color: black;
+}
+
+/* Styling for the form */
+form {
+  margin: 200px 0 80px 12px;
+  width: 300px;
+  padding: 50px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/* Styling for headings */
+h2 {
+  margin-bottom: 12px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Input group container */
+.input-group {
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/* Button styling */
+.sign-button {
+  background-color: white;
+  color: black;
+  font-size: smaller;
+  padding: 8px;
+  font-size: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: -32px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: medium;
+  box-shadow: 2px 2px 0 0 black, 4px 4px 0 0 black;
+  transition: 0.3s;
+  width: 94%;
+  font-family: "Space Grotesk", sans-serif;
+}
+.sign-button:hover {
+  box-shadow: 3px 3px 0 0 black, 6px 6px 0 0 black;
+  transform: translate(-2px, -2px);
+  background-color: white;
+  color: black;
+}
+
+/* Button container */
+.button-group {
+  margin-top: 40px;
+  padding-left: 6rem;
+}
+
+/* Paragraph and anchor styling */
+p {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 425px) {
+  form {
+    margin: 100px 0 40px 12px;
+    width: 100%; /* Full width on smaller screens */
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: -20px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    padding-right: 20px; /* Reduce button padding */
+  }
+  .button-group {
+    margin-left: -60px;
+  }
+
+  .container {
+    padding: 20px; /* Less padding on smaller screens */
+    height: auto; /* Allow the container to adjust height dynamically */
+  }
+}
